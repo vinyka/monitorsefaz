@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Monitor SEFAZ DataMix</title>
+    <meta name="description" content="Um portal para monitorar em tempo real a disponibilidade dos serviços de NFE, NFC-e e CTe nas Sefaz de todo o Brasil, utilizando a API Gemini para simular os dados." />
+    <meta name="theme-color" content="#0D47A1">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Monitor SEFAZ DataMix">
+    <meta property="og:description" content="Um portal para monitorar em tempo real a disponibilidade dos serviços de NFE, NFC-e e CTe nas Sefaz de todo o Brasil.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Monitor SEFAZ DataMix">
+    <meta property="twitter:description" content="Um portal para monitorar em tempo real a disponibilidade dos serviços de NFE, NFC-e e CTe nas Sefaz de todo o Brasil.">
+
+    <!-- 1. Babel for in-browser JSX & TypeScript transpilation -->
+    <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+    <!-- 2. Tailwind Play CDN for styles without a build step -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Custom Tailwind config from tailwind.config.js
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#0D47A1',
+              'brand-secondary': '#1976D2',
+              'status-green': '#2E7D32',
+              'status-yellow': '#FFC107',
+              'status-red': '#C62828',
+              'status-blue': '#0288D1',
+              'gray-light': '#F3F4F6',
+              'gray-dark': '#1F2937',
+              'gray-medium': '#4B5563',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- 3. Importmap to manage CDN dependencies -->
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "@google/genai": "https://esm.sh/@google/genai@0.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-light dark:bg-gray-900">
+    <div id="root"></div>
+    <!-- 4. Main application script, transpiled by Babel -->
+    <script type="text/babel" data-type="module" src="./src/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

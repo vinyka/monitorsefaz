@@ -1,0 +1,2 @@
+// This file is no longer needed after removing the Vite build system.
+// TypeScript/JSX is now transpiled in the browser by Babel.

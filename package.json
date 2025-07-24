@@ -1,0 +1,10 @@
+{
+  "name": "monitor-sefaz-datamix-no-build",
+  "private": true,
+  "version": "0.0.0",
+  "description": "This project runs directly in the browser without a build step. Dependencies are loaded via the importmap in index.html.",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^0.15.0"
+  }
+}

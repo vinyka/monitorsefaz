@@ -1,0 +1,6 @@
+{
+  "name": "Monitor SEFAZ DataMix",
+  "description": "Um portal para monitorar em tempo real a disponibilidade dos serviços de NFE, NFC-e e CTe nas Sefaz de todo o Brasil, utilizando a API Gemini para simular os dados.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
